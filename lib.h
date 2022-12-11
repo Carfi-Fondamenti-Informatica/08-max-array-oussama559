@@ -1,8 +1,12 @@
-#ifndef ES8_LIB_H
-#define ES8_LIB_H
+#include "lib.h"
 
+float trovaMax(float mat[],int n){
+    float a = mat[0];
 
-float trovaMax(float [],int);
-
-
-#endif //ES8_LIB_H
+    for(int i=1;i<n;i++){
+        if(mat[i] > a){
+            a = mat[i];
+        }
+    }
+    return a;
+}
